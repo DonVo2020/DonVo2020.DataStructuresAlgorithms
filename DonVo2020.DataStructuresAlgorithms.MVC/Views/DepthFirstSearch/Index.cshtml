@@ -1,0 +1,29 @@
+﻿<h5>
+    <span style="color:orange;font-size:large">Undirected Depth First Search Vertices: </span> "a", "z", "s", "x", "d", "c", "f", "v"
+</h5>
+<p>
+    <b>
+        a: [z,s]<br />
+        z: [a]<br />
+        s: [a,x]<br />
+        x: [s,d,c]<br />
+        d: [x,c,f]<br />
+        c: [x,d,v,f]<br />
+        v: [c,f]<br />
+        f: [d,c,v]<br />
+    </b>
+</p>
+
+<link href="~/css/donvo-cytoscape.css" rel="stylesheet" />
+
+<script src="~/js/jquery.js"></script>
+
+<script src="~/js/cytoscape.min.js"></script>
+<script src="~/js/dagre.min.js"></script>
+<script src="~/js/cytoscape-dagre.js"></script>
+
+<script src="~/js/graphs/dfs-undirected-graph-cytoscape.js"></script>
+
+<body>
+    <div id="cy"></div>
+</body>

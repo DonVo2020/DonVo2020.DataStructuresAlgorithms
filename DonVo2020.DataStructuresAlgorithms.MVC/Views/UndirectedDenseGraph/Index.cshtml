@@ -1,0 +1,45 @@
+﻿@*@{
+        ViewBag.Title = "Undirected Dense Graph";
+    }
+
+    <hr />
+
+    <h5><span style="color:orange;font-size:large">DirectedWeightedDenseGraph VerticesSet 1: </span> "a", "z", "s", "x", "d", "c", "f", "v" </h5>
+
+    <p>@Model</p>*@
+
+<h5>
+    <span style="color:orange;font-size:large">Undirected Dense Graph Vertices: </span> "a", "z", "s", "x", "d", "c", "f", "v"
+    <a href="~/BreadthFirstSearch" class="btn btn-danger">
+        Run BFS
+    </a>
+    <a href="~/DepthFirstSearch" class="btn btn-danger">
+        Run DFS
+    </a>
+</h5>
+<p>
+    <b>
+        a: [z,s]<br />
+        z: [a]<br />
+        s: [a,x]<br />
+        x: [s,d,c]<br />
+        d: [x,c,f]<br />
+        c: [x,d,v,f]<br />
+        v: [c,f]<br />
+        f: [d,c,v]<br />
+    </b>
+</p>
+
+<link href="~/css/donvo-cytoscape.css" rel="stylesheet" />
+
+<script src="~/js/jquery.js"></script>
+
+<script src="~/js/cytoscape.min.js"></script>
+<script src="~/js/dagre.min.js"></script>
+<script src="~/js/cytoscape-dagre.js"></script>
+
+<script src="~/js/graphs/undirected-dense-graph-cytoscape.js"></script>
+
+<body>
+    <div id="cy"></div>
+</body>

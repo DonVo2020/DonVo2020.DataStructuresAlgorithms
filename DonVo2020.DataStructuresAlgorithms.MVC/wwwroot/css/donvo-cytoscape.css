@@ -1,0 +1,16 @@
+﻿body {
+				font-family: helvetica;
+				font-size: 14px;
+			}
+			#cy {
+				width: 90%;
+				height: 70%;
+				position: absolute;
+				left: 10px;
+				top: 250px;
+				z-index: 999;
+			}
+			h1 {
+				opacity: 0.5;
+				font-size: 1em;
+			}

@@ -1,0 +1,42 @@
+﻿@*@{
+    ViewBag.Title = "Directed Weighted Dense Graph";
+}
+
+<hr />
+
+<h5><span style="color:orange;font-size:large">DirectedWeightedDenseGraph VerticesSet 1: </span> "a", "z", "s", "x", "d", "c", "f", "v" </h5>
+
+<p>@Model</p>*@
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h5><span style="color:orange;font-size:large">Directed Weighted Dense Graph Vertices: </span> "a", "z", "s", "x", "d", "c", "f", "v" </h5>
+<p>
+    <b>
+        a: [z(2), s(1)]<br />
+        z: []<br />
+        s: [x(3)]<br />
+        x: [a(3), d(1), c(2)]<br />
+        d: [s(3), c(2), f(1)]<br />
+        c: [d(3), f(1), v(2)]<br />
+        f: [c(2)]<br />
+        v: [f(1)]<br />
+    </b>
+</p>
+
+<link href="~/css/donvo-cytoscape.css" rel="stylesheet" />
+
+<script src="~/js/jquery.js"></script>
+
+<script src="~/js/cytoscape.min.js"></script>
+<script src="~/js/dagre.min.js"></script>
+<script src="~/js/cytoscape-dagre.js"></script>
+
+<script src="~/js/graphs/directed-weighted-dense-graph-cytoscape.js"></script>
+
+<body>
+    <div id="cy"></div>
+</body>
